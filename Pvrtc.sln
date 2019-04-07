@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pvrtc", "Pvrtc\Pvrtc.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PvrtcTest", "PvrtcTest\PvrtcTest.csproj", "{2D9D61B2-6668-491C-80A7-A97B34232880}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PvrtcNETStandard", "Pvrtc\PvrtcNETStandard.csproj", "{8BA4FFF1-8C98-4B39-836B-237B09D11986}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{2D9D61B2-6668-491C-80A7-A97B34232880}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D9D61B2-6668-491C-80A7-A97B34232880}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D9D61B2-6668-491C-80A7-A97B34232880}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BA4FFF1-8C98-4B39-836B-237B09D11986}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BA4FFF1-8C98-4B39-836B-237B09D11986}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BA4FFF1-8C98-4B39-836B-237B09D11986}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BA4FFF1-8C98-4B39-836B-237B09D11986}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
