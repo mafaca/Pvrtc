@@ -1,0 +1,9 @@
+**/.vs/
+**/*.*.user
+!PvrtcTest/PvrtcTest.csproj.user
+packages/
+**/packages.config
+
+Bins/
+
+*.DotSettings.user
