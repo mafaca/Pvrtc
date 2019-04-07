@@ -44,11 +44,14 @@ namespace Pvrtc
 		{
 			fixed (byte* inputPtr = input)
 			{
-				PVRDecompress(inputPtr, do2bitMode, xDim, yDim, output);
+				fixed (byte* putputPtr = output)
+				{
+					PVRDecompress(inputPtr, do2bitMode, xDim, yDim, putputPtr);
+				}
 			}
 		}
 
-		private unsafe static void PVRDecompress(byte* compressedData, bool do2bitMode, int xDim, int yDim, byte[] output)
+		public unsafe static void PVRDecompress(byte* compressedData, bool do2bitMode, int xDim, int yDim, byte* output)
 		{
 			int xBlockSize = do2bitMode ? BlockX2bpp : BlockX4bpp;
 			// for MBX don't allow the sizes to get too small
