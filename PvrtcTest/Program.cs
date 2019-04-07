@@ -24,15 +24,13 @@ namespace PvrtcTest
 
 			using (DirectBitmap bitmap = new DirectBitmap(width, height))
 			{
-				byte[] data = File.ReadAllBytes(path);
-				PvrtcDecoder decoder = new PvrtcDecoder();
-
 				ConsoleKeyInfo key;
+				byte[] data = File.ReadAllBytes(path);
 				Stopwatch stopwatch = new Stopwatch();
 				do
 				{
 					stopwatch.Start();
-					decoder.DecompressPVRTC(data, width, height, bitmap.Bits, do2bit);
+					PvrtcDecoder.DecompressPVRTC(data, width, height, bitmap.Bits, do2bit);
 					stopwatch.Stop();
 
 					Console.WriteLine("Processed " + stopwatch.ElapsedMilliseconds);
